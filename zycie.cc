@@ -153,7 +153,7 @@ int main( int argc , char * argv[]){
 
     gra.setRandom( prob );
     string what = "gnuplot -e \"set pal def (0 'white', 1 'black'); set terminal png;set output 'data";
-    show(H, S, gra);
+//    show(H, S, gra);
     printToFile(gra, "dane.dat", H, S);
     string tmp_str;
     tmp_str = what + "000.png'; plot 'dane.dat' matrix with image\"";
